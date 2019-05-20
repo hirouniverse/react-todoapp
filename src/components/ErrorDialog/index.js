@@ -6,7 +6,6 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogActions from '@material-ui/core/DialogActions';
-import SvgIcon from '@material-ui/core/SvgIcon';
 
 const styles = {
   topMargin: {
@@ -51,7 +50,7 @@ export class ErrorDialog extends Component {
         <Dialog
           open={this.state.open}
           onClose={this.handleClose}>
-          <DialogTitle><ErrorIcon />{'This is sample error dialog.'}</DialogTitle>
+          <DialogTitle>{'This is sample error dialog.'}</DialogTitle>
           <DialogContent>
             <DialogContentText>
               Please click either button.
